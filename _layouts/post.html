@@ -1,5 +1,7 @@
 ---
 layout: default
+comments: true
+
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -36,4 +38,7 @@ layout: default
 {%- if page.comments -%}
   {%- endif -%}
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  {%- if page.comments -%} 
+    {%- endif -%}
+
 </article>
