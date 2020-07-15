@@ -38,7 +38,7 @@ comments: true
 {%- if page.comments -%}
   {%- endif -%}
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-  {%- if page.comments -%} 
-    {%- endif -%}
+  {% if page.comments %} 
+    {% endif %}
 
 </article>
